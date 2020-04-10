@@ -1,0 +1,21 @@
+﻿
+@{
+    ViewData["Title"] = "Login";
+}
+<h3 class="title is-1">@ViewData["Message"]</h3>
+<form method="post">
+    <label>Search:</label><br />
+    <input type="text" name="search" /><br /><br />
+    <input type="submit" value="Отправить" />
+</form>
+<form method="post">
+    <label>Name:</label><br />
+    <input type="text" name="name" /><br /><br />
+    <label>Group:</label><br />
+    <input type="text" name="group" /><br /><br />
+    <label>Birth date:</label><br />
+    <input type="date" id="start" name="date"
+           value="2020-04-10"
+           min="1918-01-01" max="2020-04-10">
+    <input type="submit" value="Отправить" />
+</form>
